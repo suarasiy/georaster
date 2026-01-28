@@ -5,6 +5,13 @@
   "main": "dist/georaster.bundle.min.js",
   "browser": "./dist/georaster.browser.bundle.min.js",
   "unpkg": "./dist/georaster.browser.bundle.min.js",
+  "exports": {
+    ".": {
+      "browser": "./dist/georaster.browser.bundle.min.js",
+      "node": "./dist/georaster.bundle.min.js",
+      "default": "./dist/georaster.browser.bundle.min.js"
+    }
+  },
   "files": [
     "webpack.config.js",
     "src",
@@ -29,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GeoTIFF/georaster.git"
+    "url": "git+https://github.com/suarasiy/georaster"
   },
   "keywords": [
     "geotiff",
@@ -43,9 +50,9 @@
   "author": "Daniel Dufour and Steve Peyton",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/GeoTIFF/georaster/issues"
+    "url": "https://github.com/suarasiy/georaster/issues"
   },
-  "homepage": "https://github.com/GeoTIFF/georaster#readme",
+  "homepage": "https://github.com/suarasiy/georaster#readme",
   "dependencies": {
     "calc-image-stats": "^0.9.0",
     "cross-fetch": "^3.0.4",

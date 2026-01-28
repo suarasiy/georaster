@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import parseData from './parseData.js';
 
 // this is a bit of a hack to trick geotiff to work with web worker

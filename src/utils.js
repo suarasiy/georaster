@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 function countIn1D(array) {
   return array.reduce((counts, value) => {
     if (counts[value] === undefined) {

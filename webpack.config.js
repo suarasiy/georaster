@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const webpack = require('webpack');
 const path = require('path');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');

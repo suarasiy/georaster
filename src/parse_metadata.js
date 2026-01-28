@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const findTagByPath = require('xml-utils/src/find-tag-by-path');
 
 
