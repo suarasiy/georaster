@@ -98,7 +98,12 @@ export default function parseData(data, debug) {
               result.numberOfRasters = fileDirectory.SamplesPerPixel;
 
               if (fileDirectory.ColorMap) {
-                result.palette = getPalette(image);
+                try {
+                  result.palette = getPalette(image);
+                } catch (paletteError) {
+                  console.warn('[georaster] warning: failed to process palette, continuing without it:', paletteError.message);
+                  // Continue without palette - the raster data is still valid
+                }
               }
 
               if (!data.readOnDemand) {
