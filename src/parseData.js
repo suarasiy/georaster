@@ -27,7 +27,6 @@ using @babel/polyfill */
 export default function parseData(data, debug) {
   return new Promise((resolve, reject) => {
     try {
-      console.log('[MY-CHANGE] parseData called with rasterType:', data.rasterType);
       if (debug) console.log('starting parseData with', data);
       if (debug) console.log('\tGeoTIFF:', typeof GeoTIFF);
 
